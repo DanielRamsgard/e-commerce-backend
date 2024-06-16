@@ -4,7 +4,7 @@ from requests.structures import CaseInsensitiveDict
 import os
 from dotenv import load_dotenv
 
-def send_res(email, address, total, item_list):
+def send_res(email, total, address, item_list):
     load_dotenv()
 
     sendgrid_api_key = os.getenv('API_KEY')
@@ -37,4 +37,4 @@ def send_res(email, address, total, item_list):
     ]
     }
 
-    res = requests.post(url, headers=headers, json=data)
+    requests.post(url, headers=headers, json=data)

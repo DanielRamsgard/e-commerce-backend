@@ -23,16 +23,16 @@ def send_res(email, total, address, item_list):
             "email": f"{email}"
             }
         ],
-        "subject": "Sendgrid",
+        "subject": "Honey Order",
         }
     ],
     "from": {
-        "email": "Daniel.Ramsgard@unc.edu",
+        "email": "dramsgard@gmail.com",
     },
     "content": [
         {
         "type": "text/plain",
-        "value": f"Dear {email},\n\n Your order totalling ${total} for {item_list} will be shipped to {address} within 24 hours.",
+        "value": f"Dear {email},\n\nYour order totalling ${total} for {item_list} will be shipped to {address} within 72 hours.\n\nSincerely, \n\nDaniel Ramsgard\n3154478656\ndramsgard@gmail.com",
         }
     ]
     }

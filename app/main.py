@@ -14,6 +14,7 @@ app = FastAPI()
 origins = [
     "http://localhost",
     "http://localhost:3000",
+    "https://d1jg1a4h2yqjdm.cloudfront.net"
 ]
 
 app.add_middleware(

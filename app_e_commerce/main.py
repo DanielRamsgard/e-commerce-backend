@@ -33,7 +33,8 @@ db_dependancy = Annotated[Session, Depends(get_db)]
 origins = [
     "http://localhost",
     "http://localhost:3000",
-    "https://d1jg1a4h2yqjdm.cloudfront.net"
+    "https://d1jg1a4h2yqjdm.cloudfront.net",
+    "http://localhost:80"
 ]
 
 app.add_middleware(

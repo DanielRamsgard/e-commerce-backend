@@ -2,3 +2,4 @@ uvicorn
 fastapi
 pymysql
 sqlalchemy
+requests
